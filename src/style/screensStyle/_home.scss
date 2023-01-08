@@ -1,0 +1,24 @@
+
+@import '../setting';
+
+.navBarUl{
+    margin:5%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0;
+    background-color: $redLight;
+
+&li{
+    margin: auto;
+    color:$brownLetters;
+    font-size: 20px;
+    cursor: pointer;
+} li:after{
+    display: block;
+}
+li:hover:after{
+    transform: scaleX(1);
+}
+}
+
