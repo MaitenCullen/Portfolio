@@ -1,16 +1,21 @@
 import React from 'react'
+import { NavBar } from '../components/Navbar'
 
 
 
 export const Home = () => {
   return (
     <div>
-        <ul className='navBarUl'>
-            <li>Proyectos</li>
-            <li>Servicios</li>
-            <li>Habilidades Técnicas</li>
-            <li>Contacto</li>
-        </ul>
+    <div className='homeDiv'>
+      <h3>Hola! soy</h3>
+      <h1>Maitén</h1>
+      <h2>Front End Developer</h2>
+      <h4>Volviendo codigo el cotidiano</h4>
     </div>
+      <div>
+        <NavBar/>
+      </div>
+    </div>
+
   )
 }
