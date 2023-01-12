@@ -26,11 +26,37 @@ h2{
 
 .homeDiv{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+}
+.imageDiv{
+    width: 30%;
+    & img {
+        min-height:100vh;
+    }
+}
+.nameDiv{
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+.navFooter{
+    width: 100%;
+}
+// .imageHome{
+//     width: 30%;
+// }
 /*NavBar*/
 .navBarUl{
+    padding: 10px;
     margin:2%;
     display: flex;
     flex-direction: row;
