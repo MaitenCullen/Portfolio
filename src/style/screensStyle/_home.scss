@@ -41,6 +41,7 @@ h2{
     width: 30%;
     & img {
         min-height:100vh;
+        width: 100%;
     }
 }
 .nameDiv{
@@ -68,6 +69,7 @@ h2{
         font-weight: 400;
         vertical-align: top;
         position: relative;
+        cursor: pointer;
     }
 li{
     position:relative;

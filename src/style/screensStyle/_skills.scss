@@ -1,0 +1,21 @@
+.skillsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.skillsImage{
+    width: 100px;
+    height: 85px;
+    padding: 5px;
+    margin: 5px;
+}

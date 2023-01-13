@@ -3,7 +3,7 @@ import React from 'react'
 export const NavBar = () => {
   return (
     <div>
-        <ul className='navBarUl'>
+        <ul className='navBarUl dropdown menu' data-dropdown-menu>
             <li><a id='li01'>Proyectos</a></li>
             <li><a>Servicios</a></li>
             <li><a>Habilidades Técnicas</a></li>

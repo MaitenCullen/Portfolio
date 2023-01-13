@@ -13,7 +13,7 @@ const Skills = [{
 {
     id:3,
     tecnologia:"React js",
-    imagen:"./img/reactjs.png"
+    imagen:"./img/ReactJS1.png"
 },
 {
     id:4,
@@ -33,7 +33,7 @@ const Skills = [{
 {
     id:7,
     tecnologia:"Bootstrap",
-    imagen:"./img/bootstrap.png"
+    imagen:"./img/bootstrap1.png"
 },
 {
     id:8,

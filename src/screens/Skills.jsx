@@ -14,14 +14,14 @@ export const Skills = () => {
 
 
   return (
-    <div>
+    <div className='skillsDiv'>
         <h1>
             Habilidades Técnicas
         </h1>
-        <div>
+        <div className='skills'>
             { skills.map( skill => (
-                <div key={skill.id}>
-                    <img src={skill.imagen}/>
+                <div  key={skill.id}>
+                    <img className='skillsImage' src={skill.imagen}/>
                     <p>{skill.tecnologia}</p>
                 </div>
             ))}

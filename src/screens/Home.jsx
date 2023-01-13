@@ -12,6 +12,8 @@ export const Home = () => {
         <h1>Maitén</h1>
         <h2>Front End Developer</h2>
         <h4>Volviendo codigo el cotidiano</h4>
+
+
       </div>
     <div className='navFooter'>
         <NavBar/>
