@@ -1,6 +1,6 @@
 
 @import './setting';
-
+@import './screensStyle/projects';
 @import './screensStyle/home';
 @import './screensStyle/skills';
 
@@ -14,7 +14,19 @@ body{
     background-color:$backgoundLight;
 }
 .app{
-    height: 100%;
+height: 100%;
   position: relative;
   min-height:100vh;
+}
+
+body.light { 
+    button {
+        background-color: blue;
+    }
+}
+
+body.dark {
+    button {
+        background-color: black;
+    }
 }
