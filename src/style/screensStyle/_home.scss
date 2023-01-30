@@ -3,11 +3,17 @@
 
 
 /*Home*/
-h1{
+
+.h1Name{
     font-family: $titleFont;
     font-size: 50px;
     font-weight: 500;
-    color:$brownLetters;
+  &__dark {
+    color:$redLight;
+  }
+  &__light{
+    color:$redLight;
+  }
 }
 
 h2,h3,h4{
@@ -52,9 +58,7 @@ h2{
 .navFooter{
     width: 100%;
 }
-// .imageHome{
-//     width: 30%;
-// }
+
 /*NavBar*/
 .navBarUl{
     padding: 10px;

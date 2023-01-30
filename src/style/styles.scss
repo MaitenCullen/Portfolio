@@ -19,22 +19,8 @@ height: 100%;
   min-height:100vh;
 }
 .dark{
-background-color: #333;
-color: #fff;
+background-color: $backgroundDark;
 }
 .light {
-    background-color: #fff;
-    color: #333;
+    background-color: $backgoundLight;
  }
- 
-body.light { 
-    button {
-        background-color: blue;
-    }
-}
-
-body.dark {
-    button {
-        background-color: black;
-    }
-}
