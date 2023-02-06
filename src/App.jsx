@@ -3,23 +3,30 @@ import {Contact} from './screens/Contact'
 import { Home } from './screens/Home'
 import { Skills } from './screens/Skills'
 import { Projects } from './screens/Projects';
-import { LightModeProvider } from './context/UseContext';
-import { useContext } from 'react';
+import { createContext } from 'react';
+import ReactSwitch from 'react-switch';
 
+export const ThemeContext =  createContext(null);
 function App() {
+ const [theme, setTheme] = useState('light');
 
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
 
-const {LightMode} = useContext(ThemeContext);
   return (
-    <div className={LightMode ? `Container Container--Light` : `Container Container--Dark`}>
-      <LightModeProvider>
-      <button onClick={toggleTheme}>Dame Click</button>
-         <Home/>
-         <Skills/>
-         <Contact/>
-         <Projects/>
-      </LightModeProvider>
-    </div>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+    <div className='app' id={theme}>
+        <div className='switch'>
+          <label>{theme === 'light' ? "The Force" : "Dark Side"} </label>
+        <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+        </div>
+          <Home/>
+          <Skills/>
+          <Contact/>
+          <Projects/>
+      </div>
+    </ThemeContext.Provider>
   )
 }
 

@@ -6,15 +6,17 @@
 
 .h1Name{
     font-family: $titleFont;
-    font-size: 50px;
-    font-weight: 500;
-  &__dark {
-    color:$redLight;
-  }
-  &__light{
-    color:$redLight;
-  }
+    font-size: 70px;
+    font-weight: bold;
 }
+#dark .h1Name{
+    color: $red;
+    background-color: $backgroundDark;
+}
+#light .h1Name{
+   color: $darkBlue;
+}
+
 
 h2,h3,h4{
     font-family: $fontGeneric;
@@ -27,14 +29,22 @@ h3, h4{
 h2{
     font-weight: 600;
     font-size: 20px;
-    color:$blueLight;
 }
 
+#light h2{
+    color: $violet;
+}
+#dark h2{
+    color: $blue;
+    background-color: $backgroundDark;
+}
 .homeDiv{
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+
 }
 .textDiv{
     display: flex;
@@ -45,10 +55,12 @@ h2{
 }
 .imageDiv{
     width: 30%;
-    & img {
-        min-height:100vh;
-        width: 100%;
-    }
+    height: 70%;
+    // background-image: url('../../11.png');
+    // & img {
+    //     min-height:100vh;
+    //     width: 50%;
+    // }
 }
 .nameDiv{
     display: flex;
@@ -57,6 +69,7 @@ h2{
 }
 .navFooter{
     width: 100%;
+    
 }
 
 /*NavBar*/
