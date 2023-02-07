@@ -8,27 +8,32 @@
     font-family: $titleFont;
     font-size: 70px;
     font-weight: bold;
+    line-height: 60px;
 }
 #dark .h1Name{
     color: $red;
-    background-color: $backgroundDark;
+    text-shadow: 2px 1px 3px #e72c2c;
 }
+
 #light .h1Name{
-   color: $darkBlue;
+   color: $darkGreenDark;
+   text-shadow: 1px 1px 4px #00ffe0;
 }
 
 
 h2,h3,h4{
     font-family: $fontGeneric;
-    color:$brownLetters;
+    line-height: 40px;
 }
 h3, h4{
     font-weight: 500;
-    font-size: 20px;
+    line-height: 60px;
+    font-size: 25px;
 }
+
 h2{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #light h2{
@@ -36,8 +41,8 @@ h2{
 }
 #dark h2{
     color: $blue;
-    background-color: $backgroundDark;
 }
+
 .homeDiv{
     height: 100vh;
     display: flex;
@@ -56,11 +61,6 @@ h2{
 .imageDiv{
     width: 30%;
     height: 70%;
-    // background-image: url('../../11.png');
-    // & img {
-    //     min-height:100vh;
-    //     width: 50%;
-    // }
 }
 .nameDiv{
     display: flex;
@@ -81,6 +81,7 @@ h2{
     list-style: none;
     justify-content: space-evenly;
     a {
+        font-size: 25px;
         text-decoration: none;
         color: $brownLetters;
         font-weight: 400;
@@ -108,10 +109,32 @@ li{
         transform-origin: left;
         transform: scaleX(1);
     }
+
 }
 }
 
     
-
+#light .navBarUl li{
+    position:relative;
+    padding: 5px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            border-radius: 4px;
+            background-color:$green;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover::before{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    
+}
 
 

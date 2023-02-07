@@ -4,7 +4,7 @@ import { NavBar } from '../components/Navbar'
 
 
 export const Home = () => {
-  const theme = 'light'
+  const theme = ''
   return (
     <div className='homeDiv'>
     <div className='textDiv'>
@@ -18,9 +18,6 @@ export const Home = () => {
         <NavBar/>
     </div>
     </div>
-    {/* <aside className='imageDiv'>
-        <img src='../../11.png' className='imageHome'/>
-    </aside> */}
     </div>
 
   )

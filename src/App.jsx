@@ -5,6 +5,7 @@ import { Skills } from './screens/Skills'
 import { Projects } from './screens/Projects';
 import { createContext } from 'react';
 import ReactSwitch from 'react-switch';
+import { NavBar } from './components/Navbar';
 
 export const ThemeContext =  createContext(null);
 function App() {
