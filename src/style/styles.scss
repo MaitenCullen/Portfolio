@@ -1,8 +1,10 @@
 
 @import './setting';
-
+@import './screensStyle/projects';
 @import './screensStyle/home';
-
+@import './screensStyle/skills';
+@import './screensStyle/Contact';
+@import './screensStyle/CardProjects';
 
 
 * {
@@ -10,7 +12,49 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-.color{
-    background-color:red;
+// body{
+//     background-color:$backgoundLight;
+// }
+.app{
+  height: 100%;
+  position: relative;
+  min-height:100vh;
 }
+.sectionAPP{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#dark {
+background-color: $backgroundDark;
+
+}
+
+#light {
+background-color: whitesmoke;
+ }
+
+ .switch {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $titleFont;
+    letter-spacing: 6px;
+  }
+  
+  .switch label {
+    margin: 10px;
+  }
+  
+  #light .switch label {
+    color: $darkBlue;
+  }
+  
+  #dark .switch label {
+    color: $red;
+  }
+

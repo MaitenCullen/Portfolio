@@ -1,16 +1,17 @@
+
 import React from 'react'
+import { Contact } from './Contact'
+import { Header } from './Header'
+import { Projects } from './Projects'
+import { Skills } from './Skills'
 
-
-
-export const Home = () => {
+export default function Home() {
   return (
-    <div>
-        <ul className='navBarUl'>
-            <li>Proyectos</li>
-            <li>Servicios</li>
-            <li>Habilidades Técnicas</li>
-            <li>Contacto</li>
-        </ul>
-    </div>
+    <>
+    <Header/>
+    <Skills/>
+    <Projects/> 
+    <Contact/>
+    </>
   )
 }

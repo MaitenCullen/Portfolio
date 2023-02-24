@@ -1,10 +1,23 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
-
-/*Colors light*/
-
-
-$backgoundLight: #E5E2CA;
-$redLight: #E7472E;
-$blueLight:#52908B;
+/*Colors*/
+$backgoundLight: #bfaa87;
+$backgroundDark:#000000;
+$lightBrown: #c7bca7;
+$red: #b70000;
+$redLight:#e7250a;
+$blue:#0e9094;
+$darkBlue:#0087e9;
+$blueLight:#59c2ef;
+$green:#33e6ac;
+$lightGreen:#22c1a087;
+$darkGreen:#00c0a9;
+$darkGreenDark:#04685c;
 $brownLetters:#472C33;
+$violet:#af639e;
+$darkViolet:#6d1e5c;
+
+/*Fonts*/
+$titleFont:'Sorts Mill Goudy', serif;
+$fontGeneric:'Montserrat', sans-serif;

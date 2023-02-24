@@ -1,24 +1,257 @@
 
 @import '../setting';
 
+
+/*Home*/
+
+.h1Name{
+    font-family: $titleFont;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    letter-spacing: 7px;
+}
+#dark .h1Name{
+    color: $red;
+    text-shadow: 2px 1px 3px #ff66009d;
+}
+
+#light .h1Name{
+   color: $darkGreenDark;
+   text-shadow: 1px 1px 4px #00ffe0;
+}
+
+#light h3, h4{
+    color: $darkBlue;
+}
+#dark h3, h4{
+    color: $violet;
+    }
+    
+h2,h3,h4{
+    font-family: $fontGeneric;
+    line-height: 40px;
+}
+h3, h4{
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 25px;
+    letter-spacing: 6px;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+
+#light h2{
+    color: $violet;
+}
+#dark h2{
+    color: $blue;
+}
+
+.homeDiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.imageDiv{
+    width: 30%;
+    height: 70%;
+}
+.nameDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navFooter{
+    width: 100%;
+    
+}
+
+/*NavBar*/
 .navBarUl{
-    margin:5%;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 25px 0;
-    background-color: $redLight;
+    justify-content: space-evenly;
+    a {
+        font-size: 25px;
+        text-decoration: none;
+        color: $darkViolet;
+        font-weight: bold;
+        letter-spacing: 3px;
+        vertical-align: top;
+        position: relative;
+        cursor: pointer;
+        font-family: $fontGeneric;
+    }
+li{
+    position:relative;
+    padding: 6px;
+    margin: 1rem;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 4px;
+        background-color:$redLight;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    &:hover::before{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
 
-&li{
-    margin: auto;
-    color:$brownLetters;
-    font-size: 20px;
-    cursor: pointer;
-} li:after{
-    display: block;
-}
-li:hover:after{
-    transform: scaleX(1);
 }
 }
 
+#dark .navBarUl a{
+    color:$red;
+}
+
+#light .navBarUl li{
+    position:relative;
+    padding: 5px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            border-radius: 4px;
+            background-color:$green;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover::before{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    
+}
+
+
+.navButton{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $green;
+    color: white;
+    display: none;
+    border: 2px solid white;
+}
+
+.divMobile{
+    display: none;
+}
+@media screen and (min-width:661px) {
+    .mobileNavbar{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+
+    .h1Name{
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 6px;
+    }
+    h2,h3,h4{
+        line-height: 25px;
+       
+    }
+    h3, h4{
+        line-height: 40px;
+        font-size: 18px;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+    
+    h2{
+        font-weight: 700;
+        font-size: 19px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    .navFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .divMobile{
+        display: flex;
+    }
+    .navBarUl{
+        display: none;
+    }
+    .mobileNavbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navButton{
+        display: inline-block;
+    }
+    .clean {
+        display: none;
+    }
+    .navLink a{
+        text-decoration: none;
+        color:$violet;
+        margin: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .h1Name{
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 6px;
+    }
+    .nameDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+    }
+    h2,h3,h4{
+        line-height: 25px;
+    }
+    h3, h4{
+        line-height: 40px;
+        font-size: 13px;
+        letter-spacing: 5px;
+    }
+    
+    h2{
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 4spx;
+    }
+}

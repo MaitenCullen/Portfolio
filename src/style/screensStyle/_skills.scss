@@ -1,0 +1,41 @@
+.skillsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        font-family: $fontGeneric;
+        font-weight: 800;
+        font-size: 35px;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+}
+
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 50%;
+    padding: 10px;
+
+}
+
+.skillsImage{
+    width: 100px;
+    height: 85px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#dark .skillsDiv h1{
+    color: $violet;
+
+}
+#light .skillsDiv h1{
+    text-align: center;
+    color:$violet;
+    text-shadow: 1px 1px 4px #00ffe0;
+}
+

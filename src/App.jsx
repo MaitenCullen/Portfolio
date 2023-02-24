@@ -1,32 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {Contact} from './screens/Contact'
+import { Skills } from './screens/Skills'
+import { Projects } from './screens/Projects';
+import { createContext } from 'react';
+import ReactSwitch from 'react-switch';
+import Home from './screens/Home';
+import { Header } from './screens/Header';
 
+
+export const ThemeContext =  createContext(null);
 function App() {
-  const [count, setCount] = useState(0)
+ const [theme, setTheme] = useState('dark');
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
 
   return (
-    <div>
-      <div className='color'>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+    <div className='app' id={theme}>
+        <div className='switch'>
+          <label>{theme === 'light' ? "The Force" : "Dark Side"} </label>
+        <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+        </div>
+        <section className='sectionAPP'>
+          <Home/>
+        </section>
       </div>
-      <h1>Vite + React</h1>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='color'>
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </ThemeContext.Provider>
   )
 }
 
