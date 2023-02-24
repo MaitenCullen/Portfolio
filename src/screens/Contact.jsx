@@ -71,15 +71,12 @@ const contactDates = (event) => {
         </ul>
         <hr/>
         <ul className="social-media-list" id={theme}>
-          <li><a href="https://github.com/MaitenCullen" target="_blank" className="contact-icon">
-           <FiGithub/></a>
-          </li>
-          <li><a href="https://www.linkedin.com/in/maiten-cullen-/" target="_blank" className="contact-icon">
+          <a href="https://github.com/MaitenCullen" target="_blank" className="contact-icon">
+           <FiGithub as='a' href="https://github.com/MaitenCullen"/></a>
+          <a href="https://www.linkedin.com/in/maiten-cullen-/" target="_blank" className="contact-icon">
            <FaLinkedin/></a>
-          </li>
-          <li><a href="https://wa.me/3413540307" target="_blank" className="contact-icon">
-           <IoLogoWhatsapp/></a>
-          </li>     
+          <a href="https://wa.me/3413540307" target="_blank" className="contact-icon">
+           <IoLogoWhatsapp/></a>             
         </ul>
         <hr/>
      </div>

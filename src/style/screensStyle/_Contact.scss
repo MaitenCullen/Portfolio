@@ -33,7 +33,7 @@
   
   /* Left contact page */
   .formContact {
-    width: 40%;
+    width: 50%;
     font-family: 'Lato';
     font-weight: 400;
     display: flex;
@@ -89,7 +89,7 @@
   
 
   .dataContactContainer {
-    width: 40%;
+    width: 50%;
     display: flex;
     color: $green;
     align-items: center;
@@ -102,6 +102,7 @@
       font-family: $fontGeneric;
       font-weight: 500;
       font-size: 20px;
+      line-height: 2;
       letter-spacing: 6px;
     }
   }
@@ -119,15 +120,16 @@
   }
   
   .listItem {
-    line-height: 4;
+    line-height: 4px;
     color:black;
   }
   
   .contact-text {
-    font: 300 18px 'Lato', sans-serif;
-    letter-spacing: 1.9px;
+    font-size: 16px;
+    font-family: $fontGeneric;
+    letter-spacing: 1.5px;
     color: rgb(29, 15, 15);
-    margin-left: 5%;
+    margin-left: 1%;
   }
 
   
@@ -158,11 +160,11 @@
     color:$green;
     text-shadow: 1px 1px 4px #00ffe0;
   }
-  .social-media-list li a {
+  .social-media-list a {
     color: #fef7ff;
   }
   
-  .social-media-list li {
+  .social-media-list a {
     position: relative; 
     display: inline-block;
     height: 60px;
@@ -175,11 +177,11 @@
     cursor: pointer; 
     transition: all .2s ease-in-out;
   }
-  #dark .social-media-list li:after {
+  #dark .social-media-list a:after {
     color: $redLight;
     box-shadow: 0 0 0 1px #ff3838;
   }
-  .social-media-list li:after {
+  .social-media-list a:after {
     content: '';
     position: absolute;
     top: 0;
@@ -193,19 +195,19 @@
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:hover {
+  .social-media-list a:hover {
     background-color: #f827ff5d; 
   }
-  #dark .social-media-list li:hover{
+  #dark .social-media-list a:hover{
     background-color: #fd5d5d2f;
   }
-  .social-media-list li:hover:after {
+  .social-media-list a:hover:after {
     opacity: 1;  
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
   }
   
-  .social-media-list li:hover a {
+  .social-media-list :hover a {
     color: #8b00ad;
   }
   
@@ -233,12 +235,12 @@
       margin-top: 60px;
       max-width: 300px;
     }    
-    .social-media-list li {
+    .social-media-list a {
       height: 60px;
       width: 60px;
       line-height: 60px;
     }
-    .social-media-list li:after {
+    .social-media-list a:after {
       width: 60px;
       height: 60px;
       line-height: 60px;
@@ -262,18 +264,18 @@
     .dataContactContainer {
       width: 100%;
       margin-top: 60px;
-      max-width: 280px;
+      max-width: 250px;
     }  
     .social-media-list {
       left: 0;
     }
-    .social-media-list li {
+    .social-media-list a {
       height: 55px;
       width: 55px;
       line-height: 55px;
       font-size: 2rem;
     }
-    .social-media-list li:after {
+    .social-media-list a:after {
       width: 55px;
       height: 55px;
       line-height: 55px;
@@ -287,7 +289,7 @@
   @media screen and (max-width: 410px) {
     .dataContactContainer {
       margin-top: 30px;
-      max-width: 150px;
+      max-width: 100px;
     }    
 
     .contactWrapper .formContact, input, textarea {

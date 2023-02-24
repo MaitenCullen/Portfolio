@@ -151,19 +151,28 @@ li{
     
 }
 
+
+.navButton{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $green;
+    color: white;
+    display: none;
+    border: 2px solid white;
+}
+
+.divMobile{
+    display: none;
+}
 @media screen and (min-width:661px) {
     .mobileNavbar{
         display: none;
     }
 }
 
-.navButton{
-    border-radius: 10px;
-    background-color: $green;
-    color: white;
-    display: none;
-}
+
 @media screen and (max-width: 660px) {
+
     .h1Name{
         font-size: 40px;
         line-height: 50px;
@@ -171,24 +180,29 @@ li{
     }
     h2,h3,h4{
         line-height: 25px;
+       
     }
     h3, h4{
         line-height: 40px;
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: 6px;
+        text-align: center;
     }
     
     h2{
         font-weight: 700;
-        font-size: 18px;
+        font-size: 19px;
         letter-spacing: 5px;
+        text-align: center;
     }
     .navFooter{
         display: flex;
         flex-direction: column;
         align-items: center;
     } 
-
+    .divMobile{
+        display: flex;
+    }
     .navBarUl{
         display: none;
     }
@@ -199,14 +213,18 @@ li{
     .navButton{
         display: inline-block;
     }
-    .mobileNavbar a{
-        text-decoration: none;
-        color: $violet;
-    }
-   .mobileNavbar .clean{
+    .clean {
         display: none;
     }
- 
+    .navLink a{
+        text-decoration: none;
+        color:$violet;
+        margin: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+
 }
 
 @media screen and (max-width: 350px) {
