@@ -97,11 +97,11 @@
     & li {
       color:$darkBlue;
     }
-    & span{
+    & .contact-text{
       color:$darkGreenDark;
       font-family: $fontGeneric;
       font-weight: 500;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 2;
       letter-spacing: 6px;
     }
@@ -248,7 +248,6 @@
   }
   
   @media screen and (max-width: 569px) {
-  
     .contactWrapper{
       display: flex;
       flex-direction: column;
@@ -266,6 +265,9 @@
       margin-top: 60px;
       max-width: 250px;
     }  
+    .contactList{
+      display:none;
+    }
     .social-media-list {
       left: 0;
     }
@@ -291,16 +293,17 @@
       margin-top: 30px;
       max-width: 100px;
     }    
+.contact-text{
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
 
     .contactWrapper .formContact, input, textarea {
       width: 60px;
       margin: 2%;
     }
 
-    .dataContactContainer span{
-      font-size: 12px;
-      letter-spacing: 2px;
-    }
+
     .formButton {
       width: 99%;
     }
