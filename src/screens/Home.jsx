@@ -1,24 +1,17 @@
+
 import React from 'react'
-import { NavBar } from '../components/Navbar'
+import { Contact } from './Contact'
+import { Header } from './Header'
+import { Projects } from './Projects'
+import { Skills } from './Skills'
 
-
-
-export const Home = () => {
-  const theme = ''
+export default function Home() {
   return (
-    <div className='homeDiv'>
-    <div className='textDiv'>
-      <div className='nameDiv'>
-      <h3>Hola! soy</h3>
-        <h1 className='h1Name' id={theme}>Maitén</h1>
-        <h2 id={theme}>Front End Developer</h2>
-        <h4>Volviendo codigo el cotidiano</h4>
-      </div>
-    <div className='navFooter'>
-        <NavBar/>
-    </div>
-    </div>
-    </div>
-
+    <>
+    <Header/>
+    <Skills/>
+    <Projects/> 
+    <Contact/>
+    </>
   )
 }

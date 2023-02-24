@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getSkills } from '../mock/images';
 
 export const Skills = () => {
+    const theme = ''
     const [ skills, setSkills] = useState([])
 
     useEffect (() => {
@@ -14,18 +15,18 @@ export const Skills = () => {
 
 
   return (
-    <div className='skillsDiv'>
-        <h1>
+    <section className='skillsDiv' id='skills'>
+        <h1 id={theme}>
             Habilidades Técnicas
         </h1>
         <div className='skills'>
             { skills.map( skill => (
                 <div  key={skill.id}>
                     <img className='skillsImage' src={skill.imagen}/>
-                    <p>{skill.tecnologia}</p>
+                    {/* <p>{skill.tecnologia}</p> */}
                 </div>
             ))}
         </div>
-    </div>
+    </section>
   )
 }

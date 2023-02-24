@@ -14,8 +14,9 @@ import { GoLocation } from "react-icons/go";
 
 
  export const Contact = () => {
-  const style = { fontSize: "1.5em" }
-  const styleSend = {color:'red', fontSize: "1.5em" }
+  const theme = ''
+  const style = { fontSize: "2em" }
+  const styleSend = {color:'red', fontSize: "2.5em" }
   const [ contacto, setcontacto] = useState({})
   const [mesaje, setMesaje] = useState('')
   const userContact = (event) => {
@@ -43,7 +44,7 @@ const contactDates = (event) => {
   return (
 
 <section id="contact">
-  <h1 className="sectionHeader">Contact</h1>
+  <h1 className="sectionHeader">Contacto</h1>
   <div class="contactWrapper"> 
   {!mesaje ? 
       <form id="contact-form" className="formContact" role="form"   onSubmit={contactDates}>
@@ -53,7 +54,9 @@ const contactDates = (event) => {
           <div>
             <input className="formControl" id="email" input type="email" placeholder='cualestumail@example.com' name='mail' onChange={userContact} required/>
           </div>
-        <textarea className="formControl" textarea name="consulta" rows="5" cols="28" onChange={userContact} placeholder='Deje su consulta acá' required></textarea>
+          <div>
+          <textarea className="formControl" textarea name="consulta" rows="5" cols="28" onChange={userContact} placeholder='Deje su consulta acá' required></textarea>
+          </div>
         <button className="formButton" id="submit" type="submit" value="Enviar">
           <div className="alt-formButton">
           <RiSendPlaneFill  style={styleSend}/><span className="sendText">Enviar</span>
@@ -61,20 +64,20 @@ const contactDates = (event) => {
         </button>
       </form> : <div> <h2> En breve nos vamos a estar contactando!</h2></div> }
       <div className="dataContactContainer">
-        <ul className="contactList">
+        <ul className="contactList" id={theme}>
           <li className="listItem"><GoLocation style={style}/><span className="contact-text">Rosario, Argentina</span></li>
           <li className="listItem"><FaWhatsapp style={style}/><span className="contact-text">+54(341)15-3540307</span></li>          
           <li className="listItem"><HiOutlineMail style={style}/><span className="contact-text">cullen.maiten@gmail.com</span></li>
         </ul>
         <hr/>
-        <ul className="social-media-list">
-          <li><a href="#" target="_blank" className="contact-icon">
+        <ul className="social-media-list" id={theme}>
+          <li><a href="https://github.com/MaitenCullen" target="_blank" className="contact-icon">
            <FiGithub/></a>
           </li>
-          <li><a href="#" target="_blank" className="contact-icon">
+          <li><a href="https://www.linkedin.com/in/maiten-cullen-/" target="_blank" className="contact-icon">
            <FaLinkedin/></a>
           </li>
-          <li><a href="#" target="_blank" className="contact-icon">
+          <li><a href="https://wa.me/3413540307" target="_blank" className="contact-icon">
            <IoLogoWhatsapp/></a>
           </li>     
         </ul>
@@ -85,35 +88,3 @@ const contactDates = (event) => {
   )
 }
 
-  
-// <div className='containerContact'>
-// <h1> Contactame</h1>
-// <div>
-//   {!mesaje ? 
-//   <div className='divForm' >
-//     <form onSubmit={contactDates} className='formContact'>
-//     <input type="text" placeholder='nombre completo' name='nombre' onChange={userContact} className='formControl'/>
-//     <textarea name="consulta" rows="5" cols="28" onChange={userContact} placeholder='Deje su consulta acá'></textarea>
-//     <input type="email" placeholder='cualestumail@example.com' name='mail' onChange={userContact}/>
-//     <button type='submit' className='sendButton'>Enviar mensaje</button>  <div class="alt-formButton">
-//     <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-//   </div>
-//     </form>
-//   </div> : <div> <h2> En breve nos vamos a estar contactando!</h2>
-//   </div> }
-// </div>
-// <div>
-//   <h4>
-//     Queres conocer más o hacer alguna consulta?
-//   </h4>
-//   <p>
-//     Podes completar el formulario y te respondere a la brevedad, tambien podes contactarme por los demás canales.
-//   </p>
-//   <label>
-//     cullen.maiten@gmail.com
-//   </label>
-//   <label>
-//     Linkedin
-//   </label>
-// </div>
-// </div>

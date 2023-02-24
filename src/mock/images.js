@@ -6,11 +6,6 @@ const Skills = [{
     imagen:"./img/javascript.png"
 }, 
 {
-    id:2,
-    tecnologia:"Angular",
-    imagen:"./img/angular.png"
-},
-{
     id:3,
     tecnologia:"React js",
     imagen:"./img/ReactJS1.png"
