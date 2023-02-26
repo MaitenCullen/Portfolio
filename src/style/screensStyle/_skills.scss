@@ -28,6 +28,17 @@
     padding: 5px;
     margin: 10px;
 }
+.skillTitle{
+    color: $redLight;
+    font-family: $titleFont;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 3;
+    text-align: center;
+}
+#light .skillTitle{
+    color:$green;
+}
 
 #dark .skillsDiv h1{
     color: $violet;
