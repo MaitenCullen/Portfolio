@@ -5,12 +5,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "scss": "node-sass --watch scss -o css",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "scss": "node-sass --watch scss -o css"
   },
   "dependencies": {
     "firebase": "^9.15.0",
