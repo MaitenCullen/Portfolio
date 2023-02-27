@@ -1,5 +1,5 @@
 {
-  "homepage":"https://MaitenCullen.github.io/Portfolio",
+  "homepage":"https://maitencullen.github.io/Portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "scss": "node-sass --watch scss -o css",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "scss": "node-sass --watch scss -o css"
   },
   "dependencies": {
     "firebase": "^9.15.0",

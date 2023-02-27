@@ -6,6 +6,7 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ["firebase", "firebase/app", "firebase/auth", "firebase/firestore", "firebase/analytics"],
     },
+    base:'https://maitencullen.github.io/Portfolio/',
     plugins: [react()],
  
 })
