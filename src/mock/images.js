@@ -50,6 +50,12 @@ const Skills = [{
     tecnologia:"SASS",
     imagen:"./img/sass.png"
 }
+,
+{
+    id:13,
+    tecnologia:"Tailwind",
+    imagen:"./img/tailwind1.png"
+}
 
 ]
 

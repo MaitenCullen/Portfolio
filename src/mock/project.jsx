@@ -2,7 +2,7 @@ import {GiSelfLove } from "react-icons/gi";
 import { RiGameLine } from "react-icons/ri";
 import { FaChalkboardTeacher, FaRegHandSpock } from "react-icons/fa";
 import { MdOutlineEmojiPeople } from "react-icons/md";
-import { IoCarSportOutline } from "react-icons/io5";
+import { IoCarSportOutline, IoHammerOutline } from "react-icons/io5";
 
 const project = [
     {
@@ -47,7 +47,7 @@ const project = [
         description:'Web App construida en Vainilla JS',
         technologies:'Javascript, HTML, SASS',
         link:'https://autoescuela.vercel.app/',
-        image:'./autoEscuela',
+        image:'./autoEscuela.png',
         icon:<IoCarSportOutline/>
     },
     {
@@ -59,7 +59,16 @@ const project = [
         image:'./unlimited.png',
         video:'./unLimited2.gif',
         icon:<FaRegHandSpock/>
-    }             
+    },
+        {
+        id:6,
+        project:'Contrata',
+        description:'Web App donde solicitar distintos oficios',
+        technologies:'React JS, Redux, Tailwind, Node JS, Doker, Mongo, Moongose',
+        link:'https://contrata.vercel.app/',
+        image:'./contrata.png',
+        icon:<IoHammerOutline/>  
+    }        
 ]
 
 
