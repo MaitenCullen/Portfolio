@@ -21,7 +21,7 @@ export const Skills = () => {
         </h1>
         <div className='skills'>
             { skills.map( skill => (
-                <div  key={skill.id}>
+                <div  key={skill.id} className='skill-div'>
                     <img className='skillsImage' src={skill.imagen}/>
                     <p className='skillTitle'>{skill.tecnologia}</p>
                 </div>

@@ -3,6 +3,8 @@ import { RiGameLine } from "react-icons/ri";
 import { FaChalkboardTeacher, FaRegHandSpock } from "react-icons/fa";
 import { MdOutlineEmojiPeople } from "react-icons/md";
 import { IoCarSportOutline, IoHammerOutline } from "react-icons/io5";
+import { FaDog } from 'react-icons/fa';
+import { ImLab } from "react-icons/im";
 
 const project = [
     {
@@ -68,7 +70,25 @@ const project = [
         link:'https://contrata.vercel.app/',
         image:'./contrata.png',
         icon:<IoHammerOutline/>  
-    }        
+    },
+    {
+        id:7,
+        project:'Monarquia Perruna',
+        description:'Web Venta accesorios para mascotas',
+        technologies:'React JS, Daisy UI, Figma',
+        link:'http://www.monarquiaperruna.com.ar/',
+        image:'./monarquia.png',
+        icon:<FaDog/>  
+    },         
+    {
+        id:8,
+        project:'Obertec Industrias',
+        description:'Equipamiento para Laboratorios, Industrias, Educación',
+        technologies:'HTML, CSS, PHP, Javascript, Bootstrap',
+        link:'http://www.industriasobertec.com.ar/index.php',
+        image:'./obertec.png',
+        icon:<ImLab/>  
+    }  
 ]
 
 

@@ -13,12 +13,12 @@
         text-align: center;
         margin: 0 auto;
         padding: 40px 0;
-        font-family:$fontGeneric;
+        font-family:$titleFont;
         color: #ff0c69;
         text-transform: uppercase;
         letter-spacing: 6px;
         font-weight: 800;
-        font-size: 35px;
+        font-size: 3rem;
     }
  }
  .divPoject{
@@ -59,6 +59,7 @@
     transition: all 0.3s ease;
     a{
         text-decoration: none;
+        font-family: $fontGeneric;
     }
     &:hover {
         height: 270px;

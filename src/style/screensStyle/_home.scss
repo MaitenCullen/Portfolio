@@ -5,11 +5,11 @@
 /*Home*/
 
 .h1Name{
-    font-family: $titleFont;
-    font-size: 70px;
-    font-weight: 900;
-    line-height: 70px;
-    letter-spacing: 7px;
+    font-family: $fontCuadrada;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 60px;
+    letter-spacing: 5px;
 }
 #dark .h1Name{
     color: $red;
@@ -27,8 +27,9 @@
 #dark h3, h4{
     color: $violet;
     }
-    
-h2,h3,h4{
+
+
+h3,h4{
     font-family: $fontGeneric;
     line-height: 40px;
 }
@@ -43,6 +44,9 @@ h2{
     font-weight: 900;
     font-size: 30px;
     letter-spacing: 6px;
+    font-family: $titleFont;
+    line-height: 40px;
+    font-size: 2rem;
 }
 
 #light h2{
@@ -89,7 +93,7 @@ h2{
     list-style: none;
     justify-content: space-evenly;
     a {
-        font-size: 25px;
+        font-size: 2rem;
         text-decoration: none;
         color: $darkViolet;
         font-weight: bold;
@@ -97,7 +101,7 @@ h2{
         vertical-align: top;
         position: relative;
         cursor: pointer;
-        font-family: $fontGeneric;
+        font-family: $titleFont;
     }
 li{
     position:relative;
