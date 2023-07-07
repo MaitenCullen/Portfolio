@@ -45,7 +45,7 @@ const contactDates = (event) => {
 
 <section id="contact">
   <h1 className="sectionHeader">Contacto</h1>
-  <div class="contactWrapper"> 
+  <div className="contactWrapper"> 
   {!mesaje ? 
       <form id="contact-form" className="formContact" role="form"   onSubmit={contactDates}>
           <div>
