@@ -56,7 +56,10 @@
     background: bottom;
     color: $violet;
   }
-  
+  #light .formControl,
+  textarea {
+    border: 1px solid $green;
+  }
   .formButton {
     margin-top: 15px;
     height: 40px;
@@ -70,6 +73,7 @@
   }
   #light .formButton{
     color: $violet;
+    border: 1px solid $green;
   }
   .alt-formButton {
     width: 100%;
