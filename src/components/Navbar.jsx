@@ -19,13 +19,16 @@ export const NavBar = () => {
             <li><a  href='#projects'>Proyectos</a></li>
             <li><a  href='#contact'>Contacto</a></li>
         </ul>
-        <button className='navButton' onClick={()=> toggleMenu()}>Menu</button>
+        <button className='navButton' onClick={()=> toggleMenu()}><p>Menu</p></button>
         <div className='divMobile'>
           <ul className='mobileNavbar'>
               <li id={theme} className='clean navLink'><a  href='#skills' onClick={hideMenu}>Habilidades Técnicas</a></li>
               <li className='clean navLink'><a  href='#projects' onClick={hideMenu}>Proyectos</a></li>
               <li className='clean navLink'><a  href='#contact' onClick={hideMenu}>Contacto</a></li>
-              <i className="icon-nav md-25"  onClick={hideMenu}><ImCross/></i>
+              <div className='div-icon-mobile'>
+                 <i className="icon-nav md-25"  onClick={hideMenu}><ImCross/></i>
+              </div>
+            
           </ul>
         </div>
     </div>

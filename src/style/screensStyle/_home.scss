@@ -69,7 +69,7 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .imageDiv{
     width: 30%;
@@ -161,16 +161,29 @@ li{
 .navButton{
     border-radius: 10px;
     padding: 10px;
-    background-color: $green;
-    color: white;
     display: none;
-    border: 2px solid white;
+    background-color: white;
+    border: 1px solid $green;
 }
-
+.navButton p{
+    font-family: $fontGeneric;
+    color: $darkViolet;
+    font-size: 2rem;
+}
+#dark .navButton{
+    background-color: $backgroundDark;
+    border: 1px solid $red;
+    color: $redLight;
+}
+#dark .navButton p{
+    color: $redLight;
+    font-family: $fontGeneric;
+}
 .divMobile{
     display: none;
 }
-@media screen and (min-width:661px) {
+
+@media screen and (min-width:850px) {
     .mobileNavbar{
         display: none;
     }
@@ -180,29 +193,32 @@ li{
 }
 
 
-@media screen and (max-width: 660px) {
 
+@media screen and (max-width: 849px) {
+    .navBarUl {
+        display: none;
+      }
     .h1Name{
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 3rem;
         letter-spacing: 6px;
     }
     h2,h3,h4{
-        line-height: 25px;
+        line-height: 35px;
        
     }
     h3, h4{
-        line-height: 40px;
-        font-size: 18px;
+        line-height: 50px;
+        font-size: 2rem;
         letter-spacing: 6px;
         text-align: center;
     }
     
     h2{
         font-weight: 700;
-        font-size: 19px;
-        letter-spacing: 5px;
+        font-size: 1.7rem;
+        letter-spacing: 6px;
         text-align: center;
+        line-height: 50px;
     }
     .navFooter{
         display: flex;
@@ -224,7 +240,7 @@ li{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.247);
+        background-color: rgba(0, 0, 0, 72%);
         z-index: 9999;
         transform: translateX(-100%);
         transition: transform 0.3s ease;
@@ -233,11 +249,13 @@ li{
         transform: translateX(0%);
         height: 50%;
       }
+      #light .divMobile{  
+        background-color: rgb(255 255 255 / 86%);
+      }
       .mobileNavbar{
         display: flex;
         flex-direction: column;
         list-style: none;
-        padding: 20px;
         justify-content: center;
         align-items: flex-start;
     }
@@ -246,17 +264,28 @@ li{
         text-decoration: none;
         color:$violet;
         margin: 5px;
+        padding: 10px;
         letter-spacing: 2px;
-        line-height: 61px;
-        font-size: 25px;
+        line-height: 53px;
+        font-size: 0.7rem;
         font-weight: bold;
         font-family: $fontCuadrada;
     }
-    .icon-nav{
-        color: #00ffe0;
+    #dark .navLink a{
+        color: $red;
+    }
+    .div-icon-mobile{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
     }
 
-
+    .icon-nav{
+        color: #00ffe0;
+        font-size: 1rem;
+    }
+      
 }
 
 @media screen and (max-width: 350px) {
@@ -269,7 +298,7 @@ li{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         text-align: center;
     }
     h2,h3,h4{
@@ -277,13 +306,14 @@ li{
     }
     h3, h4{
         line-height: 40px;
-        font-size: 13px;
+        font-size: 12px;
         letter-spacing: 5px;
     }
     
     h2{
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 4spx;
     }
+    
 }
