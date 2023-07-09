@@ -5,6 +5,7 @@ import { MdOutlineEmojiPeople } from "react-icons/md";
 import { IoCarSportOutline, IoHammerOutline } from "react-icons/io5";
 import { FaDog } from 'react-icons/fa';
 import { ImLab } from "react-icons/im";
+import React from "react";
 
 const project = [
     {

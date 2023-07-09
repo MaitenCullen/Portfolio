@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { createContext } from 'react';
 import ReactSwitch from 'react-switch';
 import Home from './screens/Home';
-
+import React from 'react';
 
 
 export const ThemeContext =  createContext(null);
